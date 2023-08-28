@@ -25,7 +25,8 @@ class MyButton extends StatelessWidget {
               border: Border.all(
                 color: (Theme.of(context).colorScheme.primary
                     as MaterialColor)[900]!,
-              )),
+              ),
+              borderRadius: BorderRadius.circular(10)),
           child: Center(
               child: Text(txt, style: Theme.of(context).textTheme.bodyMedium)),
         ),
