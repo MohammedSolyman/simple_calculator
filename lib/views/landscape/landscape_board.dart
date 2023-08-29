@@ -8,21 +8,19 @@ class LandscapeBoard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-        flex: 6,
-        child: Container(
-          color: (Theme.of(context).colorScheme.primary as MaterialColor)[300],
-          child: const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              MyColumn(txts: ['7', '4', '1', '00'], last: false),
-              MyColumn(txts: ['8', '5', '2', '0'], last: false),
-              MyColumn(txts: ['9', '6', '3', '.'], last: false),
-              MyColumn(txts: ['del', '/', '(', ')'], last: false),
-              MyColumn(txts: ['/', '*', '-', '+'], last: false),
-              MyColumn(txts: ['c', '='], last: true)
-            ],
-          ),
-        ));
+    return const Expanded(
+      flex: 6,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          MyColumn(txts: ['7', '4', '1', '00'], last: false),
+          MyColumn(txts: ['8', '5', '2', '0'], last: false),
+          MyColumn(txts: ['9', '6', '3', '.'], last: false),
+          MyColumn(txts: ['del', '/', '(', ')'], last: false),
+          MyColumn(txts: ['/', '*', '-', '+'], last: false),
+          MyColumn(txts: ['c', '='], last: true)
+        ],
+      ),
+    );
   }
 }

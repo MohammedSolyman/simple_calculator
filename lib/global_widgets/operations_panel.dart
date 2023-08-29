@@ -12,14 +12,10 @@ class OperationsPanel extends StatelessWidget {
     return Expanded(
         flex: 3,
         child: Obx(() {
-          return Container(
-            color:
-                (Theme.of(context).colorScheme.primary as MaterialColor)[700],
-            child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(controller.model.value.operations,
-                    style: Theme.of(context).textTheme.bodySmall)),
-          );
+          return Align(
+              alignment: Alignment.centerLeft,
+              child: Text(controller.model.value.operations,
+                  style: Theme.of(context).textTheme.bodySmall));
         }));
   }
 }

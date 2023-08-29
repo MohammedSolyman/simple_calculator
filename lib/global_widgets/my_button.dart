@@ -12,25 +12,17 @@ class MyButton extends StatelessWidget {
     Controller controller = Get.find<Controller>();
 
     return Expanded(
-      flex: flex,
-      child: InkWell(
-        onTap: () {
-          controller.myFunction(txt);
-        },
+        flex: flex,
         child: Container(
           margin: const EdgeInsets.all(2),
-          decoration: BoxDecoration(
-              color:
-                  (Theme.of(context).colorScheme.primary as MaterialColor)[100],
-              border: Border.all(
-                color: (Theme.of(context).colorScheme.primary
-                    as MaterialColor)[900]!,
-              ),
-              borderRadius: BorderRadius.circular(10)),
-          child: Center(
-              child: Text(txt, style: Theme.of(context).textTheme.bodyMedium)),
-        ),
-      ),
-    );
+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
+          child: TextButton(
+              onPressed: () {
+                controller.myFunction(txt);
+              },
+              child: Center(
+                  child: Text(txt,
+                      style: Theme.of(context).textTheme.bodyMedium))),
+        ));
   }
 }

@@ -13,8 +13,7 @@ class ResultPanel extends StatelessWidget {
         flex: 1,
         child: Obx(() {
           return Container(
-            color:
-                (Theme.of(context).colorScheme.primary as MaterialColor)[500],
+            color: Theme.of(context).primaryColor,
             child: Align(
                 alignment: Alignment.centerRight,
                 child: Text(controller.model.value.result,
