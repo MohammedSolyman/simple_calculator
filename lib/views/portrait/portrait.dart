@@ -10,12 +10,15 @@ class Portrait extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-          child: Column(
-        children: [
-          OperationsPanel(),
-          ResultPanel(),
-          PortraitBoard(),
-        ],
+          child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 10),
+        child: Column(
+          children: [
+            OperationsPanel(),
+            ResultPanel(),
+            PortraitBoard(),
+          ],
+        ),
       )),
     );
   }

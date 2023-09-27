@@ -9,7 +9,7 @@ class LandscapeBoard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Expanded(
-      flex: 6,
+      flex: 5,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

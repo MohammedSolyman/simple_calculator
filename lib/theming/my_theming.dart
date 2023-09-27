@@ -7,7 +7,7 @@ class MyThemeData {
       primarySwatch: lightSwatch,
       scaffoldBackgroundColor: lightSwatch.shade700,
       textTheme: TextTheme(
-        bodyLarge: TextStyle(fontSize: 40, color: lightSwatch.shade50),
+        bodyLarge: TextStyle(fontSize: 35, color: lightSwatch.shade50),
         bodyMedium: TextStyle(fontSize: 25, color: lightSwatch.shade900),
         bodySmall: TextStyle(fontSize: 20, color: lightSwatch.shade50),
       ),
@@ -24,7 +24,7 @@ class MyThemeData {
       primarySwatch: darkSwatch,
       scaffoldBackgroundColor: darkSwatch.shade700,
       textTheme: TextTheme(
-        bodyLarge: TextStyle(fontSize: 40, color: darkSwatch.shade50),
+        bodyLarge: TextStyle(fontSize: 35, color: darkSwatch.shade50),
         bodyMedium: TextStyle(fontSize: 25, color: darkSwatch.shade900),
         bodySmall: TextStyle(fontSize: 20, color: darkSwatch.shade50),
       ),

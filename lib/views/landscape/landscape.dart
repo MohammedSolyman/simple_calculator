@@ -10,12 +10,15 @@ class Landscape extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-          child: Column(
-        children: [
-          OperationsPanel(),
-          ResultPanel(),
-          LandscapeBoard(),
-        ],
+          child: Padding(
+        padding: EdgeInsets.all(10.0),
+        child: Column(
+          children: [
+            OperationsPanel(),
+            ResultPanel(),
+            LandscapeBoard(),
+          ],
+        ),
       )),
     );
   }
