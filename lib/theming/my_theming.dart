@@ -7,8 +7,8 @@ class MyThemeData {
       primarySwatch: lightSwatch,
       scaffoldBackgroundColor: lightSwatch.shade700,
       textTheme: TextTheme(
-        bodyLarge: TextStyle(fontSize: 35, color: lightSwatch.shade50),
-        bodyMedium: TextStyle(fontSize: 25, color: lightSwatch.shade900),
+        bodyLarge: TextStyle(fontSize: 33, color: lightSwatch.shade50),
+        bodyMedium: TextStyle(fontSize: 20, color: lightSwatch.shade900),
         bodySmall: TextStyle(fontSize: 20, color: lightSwatch.shade50),
       ),
       textButtonTheme: TextButtonThemeData(
